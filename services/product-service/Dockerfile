@@ -3,7 +3,7 @@ FROM python:3.11-slim
 WORKDIR /app
 
 COPY requirments.txt .
-run pip install -no-cashe-dir -r requirments.txt
+RUN command pip install -no-cashe-dir -r requirments.txt
 
 COPY app.py .
 
